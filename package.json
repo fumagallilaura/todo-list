@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/fumagallilaura/todo-list/issues"
   },
-  "homepage": "https://github.com/fumagallilaura/todo-list#readme"
+  "homepage": "https://github.com/fumagallilaura/todo-list#readme",
+  "devDependencies": {
+    "eslint-config-airbnb": "^19.0.4"
+  }
 }
