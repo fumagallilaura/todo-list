@@ -1,6 +1,6 @@
-import vars from '$/vars'
-import { Options, Sequelize } from 'sequelize'
-import makeTodosDAO from './daos/todos.dao'
+import vars from '$/vars';
+import { Options, Sequelize } from 'sequelize';
+import makeTodosDAO from './daos/todos.dao';
 
 const sequelize = new Sequelize({
   username: vars.db.username,
@@ -11,22 +11,22 @@ const sequelize = new Sequelize({
   dialect: vars.db.dialect,
   dialectOptions: vars.db.dialectOptions,
   logging: false
-} as Options)
+} as Options);
 
-const TodosDAO = makeTodosDAO(sequelize)
+const TodosDAO = makeTodosDAO(sequelize);
 
 const models = {
   TodosDAO
-}
+};
 
 Object
   .values(models)
-  .forEach(model => model.associate?.(models, model))
+  .forEach(model => model.associate?.(models, model));
 
 export {
   TodosDAO
-}
+};
 
 export default async () => {
-  await sequelize.authenticate()
-}
+  await sequelize.authenticate();
+};

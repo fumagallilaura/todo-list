@@ -1,5 +1,5 @@
-import winston from 'winston'
-import vars from './vars'
+import winston from 'winston';
+import vars from './vars';
 
 const logger = winston.createLogger({
   level: 'info',
@@ -9,6 +9,6 @@ const logger = winston.createLogger({
     new winston.transports.File({ filename: 'error.log', level: 'error' }),
     new winston.transports.Console(),
   ],
-})
+});
 
-export default logger
+export default logger;

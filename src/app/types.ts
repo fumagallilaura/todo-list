@@ -14,4 +14,3 @@ export type Todo = Entity & {
 
 export type AddTodo = Omit<Todo, keyof Entity>
 export type EditTodo = Partial<Omit<Todo, keyof Entity>>
-  

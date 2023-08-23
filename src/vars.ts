@@ -1,5 +1,5 @@
 import packageJson from 'package.json';
-const { env, cwd } = process
+const { env, cwd } = process;
 
 export default {
   api: {
@@ -16,4 +16,5 @@ export default {
     dialect: env.DB_DIALECT || 'mysql',
     dialectOptions: env.DB_OPTIONS ? JSON.parse(env.DB_OPTIONS) : {},
   },
-}
+};
+

@@ -4,11 +4,10 @@ import { cors } from './middlewares';
 
 
 const api = express();
-const port = 3000;
 
 // input middlewares
 api.use(express.json());
-api.use(cors)
+api.use(cors);
 
 // root router
 api.use('/', routes);
