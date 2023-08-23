@@ -1,5 +1,5 @@
-import { AddTodo, EditTodo, Todo } from '$/app/types'
-import { TodosDAO } from '$/db'
+import { AddTodo, EditTodo, Todo } from '$/app/types';
+import { TodosDAO } from '$/db';
 
 export const todosModel = {
   async get (id: Todo['id']): Promise<Todo> {
@@ -33,4 +33,4 @@ export const todosModel = {
     const result = await TodosDAO.findAll({ raw: true });
     return result as unknown as Todo[];
   }
-}
+};
