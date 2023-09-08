@@ -1,2 +1,2 @@
 # Todo List
-> Simple application with advanced concepts
+> Simple backend application with advanced concepts
